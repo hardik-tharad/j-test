@@ -252,6 +252,7 @@ public final class ByteSourceJsonBootstrapper
             ByteQuadsCanonicalizer rootByteSymbols, CharsToNameCanonicalizer rootCharSymbols,
             int factoryFeatures) throws IOException
     {
+        //Some dummy change
         int prevInputPtr = _inputPtr;
         JsonEncoding enc = JsonFactory.Feature.CHARSET_DETECTION.enabledIn(factoryFeatures) ? detectEncoding() : JsonEncoding.UTF8;
         int bytesProcessed = _inputPtr - prevInputPtr;
